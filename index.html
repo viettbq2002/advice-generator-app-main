@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./asset/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <div class="advice-card">
+      <div class="card-container">
+        <p>Advice #<span id="advice-id"></span></p>
+        <h2>" <span id="advice-text"></span> "</h2>
+        <picture>
+          <source
+            media="(max-width:500px )"
+            srcset="./asset/images/pattern-divider-mobile.svg"
+          />
+          <img src="./asset/images/pattern-divider-desktop.svg" alt="pattern" />
+        </picture>
+        <button id="generate-btn">
+          <img src="./asset/images/icon-dice.svg" alt="dice-btn" />
+        </button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/viettbq2002">Quoc Viet</a>.
+    </div>
+    <script src="./asset/js/main.js"></script>
+  </body>
+</html>

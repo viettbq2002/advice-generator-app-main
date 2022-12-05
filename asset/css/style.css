@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  /* primary */
+  --light-cyan: hsl(193, 38%, 86%);
+  --neoon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  flex-direction: column;
+}
+.advice-card {
+  width: 500px;
+  background-color: var(--grayish-blue);
+  border-radius: 1rem;
+  position: relative;
+}
+.card-container {
+  padding: 3rem ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+p {
+  color: var(--neoon-green);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+h2 {
+  color: var(--light-cyan);
+  font-size: 28px;
+}
+picture img {
+  margin-bottom: 1rem;
+}
+button {
+  position: absolute;
+  bottom: -30px;
+  background-color: var(--neoon-green);
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attribution {
+  position: fixed;
+  bottom: 30px;
+  color: var(--light-cyan);
+}
+.attribution > a {
+  color: var(--neoon-green);
+}
+button:hover {
+  filter: drop-shadow(0 0 0.75rem var(--neoon-green));
+  transition: all 0.2s ease-out;
+}
+/* reposive */
+@media screen and (max-width:500px) {
+  .advice-card {
+    width: 350px;
+
+  }
+
+}
+
